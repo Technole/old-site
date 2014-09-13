@@ -121,12 +121,13 @@ fieldset[disabled] .btn-primary.active {
     padding: 20px 40px;
     border-color: #fed136;
     border-radius: 3px;
+    border-width: 4px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 18px;
     font-weight: 700;
     color: #fff;
-    background-color: #fed136;
+    background-color: none;
 }
 
 .btn-xl:hover,
@@ -136,7 +137,7 @@ fieldset[disabled] .btn-primary.active {
 .open .dropdown-toggle.btn-xl {
     border-color: #f6bf01;
     color: #fff;
-    background-color: #fec503;
+    background-color: rgba(254, 197, 3, 0.5);
 }
 
 .btn-xl:active,
@@ -161,7 +162,6 @@ fieldset[disabled] .btn-xl:active,
 .btn-xl[disabled].active,
 fieldset[disabled] .btn-xl.active {
     border-color: #fed136;
-    background-color: #fed136;
 }
 
 .btn-xl .badge {
@@ -297,19 +297,33 @@ header .intro-text .intro-heading {
 }
 
 header .intro-text .intro-input {
-    margin-bottom: 25px;
+    margin: 0px 10px 0px 50px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 50px;
     font-weight: 400;
-    line-height: 50px;
-    background-color: rgba(255, 255, 255, 0.6);
+    line-height: 65px;
+    background-color: rgba(255, 255, 255, 0);
     border: none;
     color: #fff;
     padding: 0;
     float: left;
     position: relative;
+    width: 65%;
+    height: 100%;
+    border: 4px rgba(255,255,255, 0.3) solid;
+    border-radius:4px;
+    outline: none;
 }
 
+header .intro-text .intro-input:focus,
+header .intro-text .intro-input:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+header .intr-cont {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
