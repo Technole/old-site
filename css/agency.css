@@ -398,6 +398,7 @@ section h3.section-subheading {
     opacity: 1;
 }
 
+/* Hover Image*/
 #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     position: absolute;
     top: 50%;
