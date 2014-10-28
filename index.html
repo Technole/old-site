@@ -5,7 +5,9 @@
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- user-scalable=no disables zooming on mobile devices.
+         Adds the feel of a native application. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -16,6 +18,8 @@
 
     <!-- Custom CSS -->
     <link href="css/agency.css" rel="stylesheet">
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -92,6 +96,7 @@
         </div>
     </header>
 
+    
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="bg-light-gray">
@@ -102,28 +107,15 @@
                     <h3 class="section-subheading text-muted">Projects made by our members.</h3>
                 </div>
             </div>
-            
-            <div class="row">    
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/fms.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>FindMySlothz</h4>
-                        <!-- <p class="text-muted"></p> -->
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6 portfolio-item">
+            <div class="row"> 
+              <div id="portfolio sliders" class="owl-carousel">
+                                <div class="item">
                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
+                                <!--
                                 <i class="fa fa-plus fa-3x"></i>
+                                -->
                             </div>
                         </div>
                         <img src="img/portfolio/ss.png" class="img-responsive" alt="">
@@ -133,27 +125,13 @@
                         <!-- <p class="text-muted"></p> -->
                     </div>
                 </div>
-                
-                <div class="col-md-3 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/gtgame.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>HackGT Sponsor Game</h4>
-                        <!-- <p class="text-muted"></p> -->
-                    </div>
-                </div>
-                
-                <div class="col-md-3 col-sm-6 portfolio-item">
+                <div class="item">
                     <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
+                                <!--
                                 <i class="fa fa-plus fa-3x"></i>
+                                -->
                             </div>
                         </div>
                         <img src="img/portfolio/jot.jpg" class="img-responsive" alt="">
@@ -163,7 +141,44 @@
                         <!-- <p class="text-muted">Website Design</p> -->
                     </div>
                 </div>
+                <div class="item">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <!--
+                                <i class="fa fa-plus fa-3x"></i>
+                                -->
+                            </div>
+                        </div>
+                        <img src="img/portfolio/fms.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>FindMySlothz</h4>
+                        <!-- <p class="text-muted"></p> -->
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <!--  
+                                <i class="fa fa-plus fa-3x"></i>
+                                -->
+                            </div>
+                        </div>
+                        <img src="img/portfolio/gtgame.png" class="img-responsive" alt="">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>HackGT Sponsor Game</h4>
+                        <!-- <p class="text-muted"></p> -->
+                    </div>
+                </div>
+                <!--
+                <div class="item">
+                </div>
+                -->
             </div>
+          </div>
         </div>
     </section>
 
@@ -176,12 +191,13 @@
                     <h3 class="section-subheading text-muted"></h3>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-lg-12">
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/mhacksteam.jpg" width="236" height="236" alt="">
+                                <img class="img-circle img-responsive" src="img/NoleTeams/mhacksteam.jpg" width="236" height="236" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -193,9 +209,10 @@
                                 </div>
                             </div>
                         </li>
+                        
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" height="236" width="236" alt="">
+                                <img class="img-circle img-responsive" src="img/NoleTeams/nightHacks.jpg" height="236" width="236" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading" style="margin-left: 58px;">
@@ -207,34 +224,52 @@
                                 </div>
                             </div>
                         </li>
+                         
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" height="236" width="236" alt="">
+                                <img class="img-circle img-responsive" src="img/NoleTeams/techtalks.jpg" height="236" width="236" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
+                                    <h4>TechNole Talks</h4>
+                                    <h4 class="subheading"></h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted">Want to learn the basics of the latest tech tools? TechNole Talks aims to teach members new technology tools that will get you ready for any project! <br> <br> someone @ fsu . com</p>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/NoleTeams/spark.jpg" height="236" width="236" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading" style="margin-left: 58px">
                                     <h4>Spark</h4>
                                     <h4 class="subheading"></h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted">We are working to improve the sense of community and the spread of ideas, pursuing projects, and helping new programmers learn to code! <br> <br> je13g@my.fsu.edu</p>
+                                    <p class="text-muted" style="margin-left: 58px">We are working to improve the sense of community and the spread of ideas, pursuing projects, and helping new programmers learn to code! <br> <br> je13g@my.fsu.edu</p>
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
+                        
+                        <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/hackfsu1.png" width="236" height="236" alt="">
+                                <img class="img-circle img-responsive" src="img/NoleTeams/hackfsu.jpg" width="236" height="236" alt="">
                             </div>
                             <div class="timeline-panel">
-                                <div class="timeline-heading" style="margin-left: 58px;">
+                                <div class="timeline-heading">
                                     <h4>HackFSU</h4>
                                     <h4 class="subheading"></h4>
                                 </div>
                                 <div class="timeline-body">
-                                    <p class="text-muted" style="margin-left: 58px;">Hackathons are taking the world by storm. We will keep you fed and energized while you create something amazing within 24 hours and get the chance to meet other hackers, sponsors, and mentors! Whether you're a coder, designer, maker, or engineer, join us for our second annual hackathon here at Florida State University! <br> <br> Matt @ matt@hackfsu.com </p>
+                                    <p class="text-muted">Hackathons are taking the world by storm. We will keep you fed and energized while you create something amazing within 24 hours and get the chance to meet other hackers, sponsors, and mentors! Whether you're a coder, designer, maker, or engineer, join us for our second annual hackathon here at Florida State University! <br> <br> Matt @ matt@hackfsu.com </p>
                                 </div>
                             </div>
                         </li>
+                        
                         <!--
                         <li class="timeline-inverted">
                             <div class="timeline-image">
@@ -480,7 +515,6 @@
                             <p><strong>"I was curious to find the nearest sloth in the area. I figured others could feel the same. Sloths are my favorite species and they became recently endangered by WWF. This is a base that could be evolved to do so much more. I'm interested in the idea that this could help us understand our wildlife better and keep people more educated in the subject of endangered species."</strong></p>
                             <ul class="list-inline">
                                 <li>By: Bianca Idas & Andree Dove</li>
-                                <li>Date: 2014</li>
                                 <li>Made at HackGT</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -513,7 +547,6 @@
                             </strong></p>
                             <ul class="list-inline">
                                 <li>By: Matt O'Hagan & Rylan Caskey</li>
-                                <li>Date: 2014</li>
                                 <li>Made at HackGT</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -546,7 +579,6 @@
                         </strong></p>
                             <ul class="list-inline">
                                 <li>By: Jim Bach</li>
-                                <li>Date: 2014</li>
                                 <li>Made at HackGT</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -579,7 +611,6 @@
                             </strong></p>
                              <ul class="list-inline">
                                 <li>By: Matt O'Hagan</li>
-                                <li>Date: 2014</li>
                                 <li>Made at NightHacks</li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
@@ -590,6 +621,7 @@
         </div>
     </div>
 
+<!-- Extra Portfolio Modals
     <!-- Portfolio Modal 5 -->
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
@@ -643,10 +675,11 @@
             </div>
         </div>
     </div>
+-->
 
     <!-- jQuery Version 1.11.0 -->
-    <script src="js/jquery-1.11.0.js"></script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -662,6 +695,12 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/agency.js"></script>
 
+    <!-- OWL Carousel JS -->
+    <script src="owl-carousel/owl.carousel.js"></script>
+    <script src="owl-carousel/owl.carousel.min.js"></script>
+    <!-- OWL Initializer -->
+    <script src="owl-carousel/owl.init.carousel.js"></script>
+    
 </body>
 
 </html>
