@@ -264,14 +264,20 @@ fieldset[disabled] .btn-xl.active {
 header {
     text-align: center;
     color: #fff;
+    background: linear-gradient(
+                    rgba(0, 0, 0, 0.2),
+                    rgba(0, 0, 0, 0.2)
+                ),
+                url(../img/cover.png);
     background-attachment: scroll;
-    background-image: url(../img/cover.png);
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    text-shadow: 2px 2px 8px #000; 
+
 }
 
 header .intro-text {
@@ -297,10 +303,6 @@ header .intro-text .intro-heading {
 }
 
 header .intro-text .intro-input {
-    /*margin-bottom: 25px;*/
-    /*margin: 0 0 25px 70px;*/
-    /*margin: 0 0 25px 9px;*/
-    /*margin: 0 0 25px 50px;*/
     margin-right: 150px;
     width: 300px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -319,7 +321,7 @@ header .intro-text .intro-input {
 
 @media(min-width:768px) {
     header .intro-text {
-        padding-top: 300px;
+        padding-top: 150px;
         padding-bottom: 200px;
     }
 
