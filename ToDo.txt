@@ -1,0 +1,10 @@
+TODO:
+
+- Fix navbar look
+- Add spark/HackFsu pictures
+- Fix portfolio
+- Remove Amazing Team
+- Remove Contacts
+- Add calendar instead
+- Add typeform
+- Line up NoleTeams
