@@ -1,7 +1,6 @@
 TODO:
 
 - Fix navbar look
-- Add spark/HackFsu pictures
 - Fix portfolio
 - Line up NoleTeams
-- Add resource page
+- Add Resource Page
