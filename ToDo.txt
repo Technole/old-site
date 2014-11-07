@@ -4,3 +4,4 @@ TODO:
 - Fix portfolio
 - Line up NoleTeams
 - Add Resource Page
+- Test for Mobile
