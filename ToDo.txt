@@ -11,4 +11,6 @@ TODO:
     - In smaller browsers, fix indent in inverted timelines.
     - Adjust description to be aligned with photo.
 
+- Center Resources
+
 - Test for Mobile
