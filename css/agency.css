@@ -9,6 +9,42 @@ body {
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
+.btnText{
+    text-shadow: 2px 2px 8px #000;
+}
+
+.resources {
+    background-color: rgba(34, 34, 34, 0.8);
+}
+
+.resHeader {
+    color: rgba(255, 255, 255, 0.9);
+    margin-top: 40px !important;
+
+}
+
+.resItems {
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    margin-left: 1.5em;
+}
+
+
+.resItems > div {
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+.resItems > div:before {
+    content: '+ ';
+    margin: 5px;
+}
+
+
+.row-dev {
+    margin-top: 35px;
+}
+
 .text-muted {
     color: #777;
 }
