@@ -1,7 +1,15 @@
 TODO:
 
-- Fix navbar look
+- Fix Navbar
+   -Navbar shouldn't overlap Main Text.
+
 - Fix portfolio
+    - Make default portfolio look, similar to Teams.
+
 - Line up NoleTeams
+    - Center Teams to be on par with title.
+    - In smaller browsers, fix indent in inverted timelines.
+    - Adjust description to be aligned with photo.
+
 - Add Resource Page
 - Test for Mobile
