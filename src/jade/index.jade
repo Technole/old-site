@@ -1,0 +1,96 @@
+extend _layout
+block vars
+	- var title = ''
+
+block localCSS
+	link(rel='stylesheet' type='text/css' href='/bower_components/owl-carousel2/dist/assets/owl.carousel.min.css')
+	link(rel='stylesheet' type='text/css' href='/bower_components/owl-carousel2/dist/assets/owl.theme.default.min.css')
+	
+block localJS
+	script(src='/bower_components/owl-carousel2/dist/owl.carousel.min.js')
+	script.
+		$(document).ready(function(){
+			$(".owl-carousel").owlCarousel({
+				items: 3,
+				margin: 20,
+				loop: true,
+				lazyLoad: true,
+				lazyEffect: true
+			});
+		});
+
+block content
+	//- Main header image
+	header
+		.container
+			.intro-text
+				.intro-lead-in Florida State University
+				.intro-heading Conquering Technology Together
+				.center-block
+					a.page-scroll.btn.btn-xl(href='https://christianespinosa.typeform.com/to/uXo6BE' target='_blank') Sign Up for more Info
+	
+	
+	//- Portfolio Grid Section
+	section#portfolio.bg-light-gray
+		.container
+			.row
+				.col-lg-12.text-center
+					h2.section-heading Projects
+					h3.section-subheading.text-muted Projects made by our members.
+			
+			.row
+				#portfolio-sliders.owl-carousel
+					.item
+						a.portfolio-link(href='#' data-toggle='modal')
+							.portfolio-hover
+								.portfolio-hover-content
+							img.img-responsive(src='/img/portfolio/jot2.jpg' alt='')
+						.portfolio-caption.text-center
+							h4 TITLE
+					
+					.item
+						a.portfolio-link(href='#' data-toggle='modal')
+							.portfolio-hover
+								.portfolio-hover-content
+							img.img-responsive(src='/img/portfolio/jot2.jpg' alt='')
+						.portfolio-caption.text-center
+							h4 TITLE
+					
+					.item
+						a.portfolio-link(href='#' data-toggle='modal')
+							.portfolio-hover
+								.portfolio-hover-content
+							img.img-responsive(src='/img/portfolio/jot2.jpg' alt='')
+						.portfolio-caption.text-center
+							h4 TITLE
+							
+					.item
+						a.portfolio-link(href='#' data-toggle='modal')
+							.portfolio-hover
+								.portfolio-hover-content
+							img.img-responsive(src='/img/portfolio/jot2.jpg' alt='')
+						.portfolio-caption.text-center
+							h4 TITLE
+					
+					.item
+						a.portfolio-link(href='#' data-toggle='modal')
+							.portfolio-hover
+								.portfolio-hover-content
+							img.img-responsive(src='/img/portfolio/jot2.jpg' alt='')
+						.portfolio-caption.text-center
+							h4 TITLE
+					
+					.row.row-dev
+						.col-lg-12.text-center
+							.center-block
+								a.page-scroll.btn.btn-xl.btnText Curated Developer Resources
+	
+	//- About Section
+	section#about
+		
+	
+	//- Services Section
+	section#services.bg-light-gray
+		
+	
+	//- Calendar
