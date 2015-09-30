@@ -41,6 +41,7 @@ html(lang='en')
 		link(rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700')
 		
 		link(rel='stylesheet' type='text/css' href='/css/startbootstrap-agency.css')
+		link(rel='stylesheet' type='text/css' href='/css/main.css')
 		
 		block localCSS
 	
@@ -65,8 +66,8 @@ html(lang='en')
 						li.hidden: a(href='#page-top')
 							
 						if title.length == 0
-							li: a.page-scroll(href='#portfolio') Projects
 							li: a.page-scroll(href='#about') About
+							li: a.page-scroll(href='#portfolio') Projects
 							li: a.page-scroll(href='#services') Services
 							li: a.page-scroll(href='#contact') Events
 							li: a(href='./resources.html') Dev Resources

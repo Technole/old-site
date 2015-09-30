@@ -15,7 +15,6 @@ var coffee = require('gulp-coffee');
 
 var pkg = require('./package.json');
 
-
 var banner = 
 	'/** \n' +
 	' * <%= pkg.name %> - <%= pkg.description %>\n' +
@@ -28,6 +27,12 @@ var dirs = {
 	pub: __dirname + '/public',
 	src: __dirname + '/src'
 };
+
+
+var pageData =  {
+	projects: require(dirs.src + '/data/projects.js')()
+};
+
 
 var date = new Date();
 var today = date.getFullYear() + '-' + date.getMonth() + '-' + date.getDay();
@@ -79,7 +84,7 @@ gulp.task('jade', ['clean'], function() {
 	return gulp.src(dirs.src + '/jade/**/[^_]*.jade')
 		.pipe(jade({
 			pretty: true,
-			locals: {}
+			locals: pageData
 		}))
 		.pipe(gulp.dest(dirs.pub));
 });
@@ -126,7 +131,7 @@ gulp.task('javascript', ['clean'], function() {
 			includeContent: true
 		}))
 		.pipe(gulp.dest(dirs.pub+ '/js'));
-})
+});
 
 gulp.task('default', ['sass', 'css', 'jade', 'coffee', 'javascript'], function() {
 	console.log('======= BUILD COMPLETE =======');

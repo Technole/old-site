@@ -29,6 +29,76 @@ block content
 				.center-block
 					a.page-scroll.btn.btn-xl(href='https://christianespinosa.typeform.com/to/uXo6BE' target='_blank') Sign Up for more Info
 	
+	//- About Section
+	section#about
+		.container
+			.row
+				.col-lg-12.text-center
+					.intro-heading Teams
+					.section-subheading.text-muted
+			
+			.row.about-item
+				.col-lg-6
+					.about-img.about-img-hackerteam
+				.col-lg-6
+					.about-text.text-left
+						h4 HackerTeam
+						p.text-muted.
+							Travel the nation and attend hackathons at several universities 
+							with the opportunity to win prizes and network with representatives 
+							of major tech companies!
+			
+			.row.about-item
+				.col-lg-6
+					.about-text.text-right
+						h4 HackFSU
+						p.text-muted.
+							Hackathons are taking the world by storm. We will 
+							keep you fed and energized while you create something 
+							amazing within 24 hours and get the chance to meet 
+							other hackers, sponsors, and mentors! Whether you're 
+							a coder, designer, maker, or engineer, join us for 
+							our third annual hackathon here at Florida State University!
+				.col-lg-6
+					.about-img.about-img-hackfsu
+				
+			.row.about-item
+				.col-lg-6
+					.about-img.about-img-lytehacks
+				.col-lg-6
+					.about-text.text-left
+						h4 LyteHacks
+						p.text-muted.
+							Prefer to get involved on a smaller scale? We 
+							are hosting themed, monthly 12-hour hackathons 
+							here on FSU's campus!
+			
+			.row.about-item
+				.col-lg-6
+					.about-text.text-right
+						h4 HackFSU
+						p.text-muted.
+							Hackathons are taking the world by storm. We will 
+							keep you fed and energized while you create something 
+							amazing within 24 hours and get the chance to meet 
+							other hackers, sponsors, and mentors! Whether you're 
+							a coder, designer, maker, or engineer, join us for 
+							our third annual hackathon here at Florida State University!
+				.col-lg-6
+					.about-img.about-img-hackfsu
+			
+			
+			.row.about-item
+				.col-lg-6
+					.about-img.about-img-lytehacks
+				.col-lg-6
+					.about-text.text-left
+						h4 StudyShesh
+						p.text-muted.
+							Aperiam blandit explicabo dolor conubia necessitatibus eveniet parturient mollit malesuada explicabo facere adipiscing hymenaeos, orci pretium? Tenetur turpis accumsan. Illo, dignissim, eveniet varius natoque! Assumenda quam nisi, illum delectus vivamus, cum senectus sint, congue maiores? Nostra? Cupidatat ligula, minima lectus vero pariatur, maiores penatibus magnam maiores, nonummy primis hic feugiat gravida? Nisi tristique eleifend vero?
+				
+							
+							
 	
 	//- Portfolio Grid Section
 	section#portfolio.bg-light-gray
@@ -40,57 +110,84 @@ block content
 			
 			.row
 				#portfolio-sliders.owl-carousel
-					.item
-						a.portfolio-link(href='#' data-toggle='modal')
-							.portfolio-hover
-								.portfolio-hover-content
-							img.img-responsive(src='/img/portfolio/jot2.jpg' alt='')
-						.portfolio-caption.text-center
-							h4 TITLE
 					
-					.item
-						a.portfolio-link(href='#' data-toggle='modal')
-							.portfolio-hover
-								.portfolio-hover-content
-							img.img-responsive(src='/img/portfolio/jot2.jpg' alt='')
-						.portfolio-caption.text-center
-							h4 TITLE
-					
-					.item
-						a.portfolio-link(href='#' data-toggle='modal')
-							.portfolio-hover
-								.portfolio-hover-content
-							img.img-responsive(src='/img/portfolio/jot2.jpg' alt='')
-						.portfolio-caption.text-center
-							h4 TITLE
-							
-					.item
-						a.portfolio-link(href='#' data-toggle='modal')
-							.portfolio-hover
-								.portfolio-hover-content
-							img.img-responsive(src='/img/portfolio/jot2.jpg' alt='')
-						.portfolio-caption.text-center
-							h4 TITLE
-					
-					.item
-						a.portfolio-link(href='#' data-toggle='modal')
-							.portfolio-hover
-								.portfolio-hover-content
-							img.img-responsive(src='/img/portfolio/jot2.jpg' alt='')
-						.portfolio-caption.text-center
-							h4 TITLE
+					- var i = 0
+					for project in projects
+						- i += 1
+						
+						.item
+							a.portfolio-link(href='#project-#{i}' data-toggle='modal')
+								.portfolio-hover
+									.portfolio-hover-content
+								img.img-responsive(src='#{project.thumbnail}' alt='')
+							.portfolio-caption.text-center
+								h4 #{project.title}
 					
 				.row.row-dev
 					.col-lg-12.text-center
 						.center-block
 							a.page-scroll.btn.btn-xl.btnText Curated Developer Resources
 
-	//- About Section
-	section#about
-		
-	
-	//- Services Section
-	section#services.bg-light-gray
-		
 	
 	//- Calendar
+	section#calendar
+		
+	//- Services Section
+	section#services.bg-light-gray
+		.container
+			.row
+				.col-lg-12.text-center
+					h2.section-heading Members
+					h3.section-subheading.text-muted Get in touch to learn more!
+					
+			.row.text-center
+				.col-md-4(style='margin-left: -35px;')
+					span.fa-stack.fa-4x
+						img(width='250' height='250' src='/img/pricing/35.png')
+					h4.service-heading 1 Semester
+				.col-md-4(style='margin-left: -35px;')
+					span.fa-stack.fa-4x
+						img(width='250' height='250' src='/img/pricing/50.png')
+					h4.service-heading 2 Semesters
+				.col-md-4(style='margin-left: -35px;')
+					span.fa-stack.fa-4x
+						img(width='250' height='250' src='/img/pricing/85.png')
+					h4.service-heading 4 Semesters
+	
+	
+	//- Contact
+	section#contact
+	
+	
+	//- Project models
+	- var i = 0
+	for project in projects
+		- i += 1
+		.portfolio-modal.modal.fade(id='project-#{i}' tabindex='-1' role='dialog' aria-hidden='true')
+			.modal-content
+				.close-modal(data-dismiss='modal')
+					.lr: .rl
+				.container: .row: .col-lg-8.col-lg-offset-2: .modal-body
+					h2
+						if project.link
+							a(href='#{project.link}' target='_blank') #{project.title}
+						else
+							| #{project.title}
+					p.item-intro.text-muted: strong #{project.subtitle}
+					img.img-responsive(src='#{project.mainImage}' alt='#{project.title}')
+					p: strong "#{project.descriptionQuote}"
+					
+					if project.devpost
+						p: a(href='#{project.devpost}' target='_blank') Check out #{project.title} on Devpost!
+					
+					p
+						| #{project.members}
+						br
+						.text-muted Made at #{project.createdAt}
+					br
+					button.btn.btn-primary(type='button' data-dismiss='modal')
+						i.fa.fa-times
+						|  Close Project
+					
+					
+					

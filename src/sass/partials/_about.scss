@@ -1,0 +1,30 @@
+.about-item {
+	display: block;
+	margin-bottom: 3em;
+	vertical-align: middle;
+}
+
+.about-img {
+	height: 300px;
+	width: 100%;
+	background-repeat: none;
+	background-size: cover;
+	background-position: center;
+}
+
+.about-text {
+	display: table-cell;
+	height: 300px;
+	width: 100%;
+	vertical-align: middle;
+	
+	p {
+		text-size: 16px;
+	}
+}
+
+
+.about-img-hackerteam 	{	background-image: url('/img/about/hackerteam.jpg');	}
+.about-img-hackfsu 		{	background-image: url('/img/about/hackfsu.jpg');	}
+.about-img-lytehacks 	{	background-image: url('/img/about/lytehacks.jpg');	}
+.about-img-techtalks 	{	background-image: url('/img/about/techtalks.jpg');	}
